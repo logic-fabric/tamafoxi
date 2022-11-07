@@ -1,0 +1,30 @@
+{
+  "name": "vanilla-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node ./node_modules/gulp/bin/gulp.js watch",
+    "buildTemplates": "node ./node_modules/gulp/bin/gulp.js buildTemplates",
+    "buildCSS": "node ./node_modules/gulp/bin/gulp.js buildCSS",
+    "autoprefixCSS": "node ./node_modules/gulp/bin/gulp.js autoprefixCSS"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/logic-fabric/logic-fabric.git"
+  },
+  "author": "Lowic Mangin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/logic-fabric/logic-fabric/issues"
+  },
+  "homepage": "https://github.com/logic-fabric/logic-fabric#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-sass": "^5.0.0",
+    "node-sass": "^6.0.1",
+    "sass": "^1.35.1"
+  },
+  "dependencies": {}
+}

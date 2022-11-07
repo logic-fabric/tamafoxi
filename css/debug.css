@@ -1,0 +1,46 @@
+/* ==============================================================
+   DEBUG CSS
+   --------------------------------------------------------------
+   A stylesheet to hightlight:
+   - links with a href="#" attribute (probably needing an update)
+   - images without alt or with an empty alt attribute
+   - empty elements to remove
+   ============================================================== */
+
+/* --------------------------------
+   Links probably needing an update
+   -------------------------------- */
+a[href="#"]:after {
+  content: " (href='#')";
+  color: crimson !important;
+}
+
+/* -------------------------------------------------
+   Images without alt or with an empty alt attribute
+   ------------------------------------------------- */
+img:not([alt]),
+img[alt=""] {
+  filter: blur(1rem) !important;
+}
+
+/* ------------------------
+   Empty elements to remove
+   ------------------------ */
+div:empty:after,
+span:empty:after,
+p:empty:after,
+li:empty:after,
+th:empty:after,
+td:empty:after {
+  content: " (empty elt)";
+  color: crimson !important;
+}
+
+div:empty,
+span:empty,
+p:empty,
+li:empty,
+th:empty,
+td:empty {
+  background: gold !important;
+}
