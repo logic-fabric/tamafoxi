@@ -1,7 +1,7 @@
 {
-  "name": "vanilla-boilerplate",
+  "name": "tamafoxi",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Tamagotchi-like game",
   "main": "index.js",
   "scripts": {
     "autoprefixCSS": "node ./node_modules/gulp/bin/gulp.js autoprefixCSS",
