@@ -7,6 +7,7 @@
     "autoprefixCSS": "node ./node_modules/gulp/bin/gulp.js autoprefixCSS",
     "buildCSS": "node ./node_modules/gulp/bin/gulp.js buildCSS",
     "dev": "parcel src/index.html",
+    "test": "jest",
     "watch": "node ./node_modules/gulp/bin/gulp.js watch"
   },
   "repository": {
@@ -26,6 +27,7 @@
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-sass": "^5.0.0",
+    "jest": "^29.2.2",
     "node-sass": "^6.0.1",
     "parcel-bundler": "^1.12.5",
     "prettier": "^2.7.1",
