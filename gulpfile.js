@@ -6,22 +6,22 @@ const sass = require("gulp-sass")(require("sass"));
 const autoprefixer = require("gulp-autoprefixer");
 
 function watch() {
-  gulp.watch("./css/scss/**/*.scss", buildCSS);
-  gulp.watch("./css/main.css", autoprefixCSS);
+  gulp.watch("./src/css/scss/**/*.scss", buildCSS);
+  gulp.watch("./src/css/main.css", autoprefixCSS);
 }
 
 function buildCSS() {
   return gulp
-    .src("./css/scss/main.scss")
+    .src("./src/css/scss/main.scss")
     .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
-    .pipe(gulp.dest("./css"));
+    .pipe(gulp.dest("./src/css"));
 }
 
 function autoprefixCSS() {
   return gulp
-    .src("./css/main.css")
+    .src("./src/css/main.css")
     .pipe(autoprefixer())
-    .pipe(gulp.dest("./css/prefixed"));
+    .pipe(gulp.dest("./src/css/prefixed"));
 }
 
 module.exports = {
