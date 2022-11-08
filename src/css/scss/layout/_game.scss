@@ -1,0 +1,29 @@
+.l-game {
+  position: relative;
+
+  width: 762px;
+  height: 762px;
+}
+
+.l-game-bg {
+  &--day {
+    position: absolute;
+    top: 67px;
+    left: 67px;
+
+    width: 628px;
+    height: 577px;
+
+    background: no-repeat url("../../assets/bg/game-bg-day.png") transparent;
+  }
+}
+
+.l-frame {
+  position: absolute;
+  top: 0;
+
+  width: 762px;
+  height: 762px;
+
+  background: no-repeat url("../../assets/bg/frame.png") transparent;
+}

@@ -1,4 +1,8 @@
 .l-canvas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   height: 100vh;
 
   background: repeat url("../../assets/bg/canvas.png") $neutral-900;
