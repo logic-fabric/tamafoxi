@@ -1,11 +1,24 @@
 .c-btn {
-  width: 62px;
+  width: 46px;
   height: 65px;
   overflow: hidden;
 
   background: no-repeat url("../../assets/buttons/command-buttons.png")
     transparent;
-  background-position: 0;
 
   cursor: pointer;
+}
+
+.c-btn-left {
+  background-position: 0;
+}
+
+.c-btn-centre {
+  width: 62px;
+
+  background-position: -84px 0;
+}
+
+.c-btn-right {
+  background-position: -180px 0;
 }

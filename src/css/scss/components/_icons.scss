@@ -1,8 +1,19 @@
 .c-action-icon {
-  width: 56px;
-  height: 65px;
+  width: 60px;
+  height: 57px;
   overflow: hidden;
 
   background: no-repeat url("../../assets/icons/action-icons.png") transparent;
+}
+
+.c-fish-icon {
   background-position: 0;
+}
+
+.c-poop-icon {
+  background-position: -160px 0;
+}
+
+.c-weather-icon {
+  background-position: -320px 0;
 }
