@@ -1,8 +1,8 @@
 import { gameState } from "./gameState";
 
-const TICK_RATE = 3000;
+import { TICK_RATE } from "./gameConstants";
 
-async function init() {
+export async function init() {
   console.log("Initializing game");
 
   let nextTimeToTick = Date.now();
@@ -20,5 +20,3 @@ async function init() {
 
   nextAnimationFrame();
 }
-
-init();
