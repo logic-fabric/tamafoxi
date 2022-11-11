@@ -7,18 +7,28 @@
     transparent;
 
   cursor: pointer;
-}
 
-.c-btn-left {
-  background-position: 0;
-}
+  &:hover {
+    background: no-repeat url("../../assets/buttons/command-buttons-hover.png")
+      transparent;
+  }
 
-.c-btn-centre {
-  width: 62px;
+  &:active {
+    background: no-repeat url("../../assets/buttons/command-buttons-active.png")
+      transparent;
+  }
 
-  background-position: -84px 0;
-}
+  &.c-btn-left {
+    background-position: 0;
+  }
 
-.c-btn-right {
-  background-position: -180px 0;
+  &.c-btn-centre {
+    width: 62px;
+
+    background-position: -84px 0;
+  }
+
+  &.c-btn-right {
+    background-position: -180px 0;
+  }
 }

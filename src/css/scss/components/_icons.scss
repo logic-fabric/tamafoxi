@@ -4,16 +4,23 @@
   overflow: hidden;
 
   background: no-repeat url("../../assets/icons/action-icons.png") transparent;
+
+  &.highlighted {
+    background: no-repeat url("../../assets/icons/action-icons-highlighted.png")
+      transparent;
+  }
+
+  &.c-fish-icon {
+    background-position: 0;
+  }
+  
+  &.c-poop-icon {
+    background-position: -160px 0;
+  }
+  
+  &.c-weather-icon {
+    background-position: -320px 0;
+  }
 }
 
-.c-fish-icon {
-  background-position: 0;
-}
 
-.c-poop-icon {
-  background-position: -160px 0;
-}
-
-.c-weather-icon {
-  background-position: -320px 0;
-}
