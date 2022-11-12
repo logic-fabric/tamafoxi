@@ -1,0 +1,23 @@
+.c-dialog {
+  position: fixed;
+  top: 0;
+
+  width: 762px;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 0 0 2rem 2rem;
+
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  background: blueviolet;
+
+  &:empty {
+    display: none;
+  }
+
+  p {
+    width: auto;
+  }
+}

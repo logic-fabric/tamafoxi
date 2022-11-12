@@ -1,4 +1,5 @@
 import { inititButtons } from "./components/buttons";
+import { displayMessageInDialog } from "./components/dialogs";
 
 import { gameState } from "./gameState";
 
@@ -8,6 +9,7 @@ export async function init() {
   console.log("Initializing game");
 
   inititButtons(gameState.handleAction);
+  displayMessageInDialog("Press the middle button to start the game");
 
   let nextTimeToTick = Date.now();
 
