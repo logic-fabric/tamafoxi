@@ -6,7 +6,7 @@ const toggleHighligthed = (iconIndex, isHighlighted) => {
     .classList.toggle("highlighted", isHighlighted);
 };
 
-export function inititButtons(handleAction) {
+export function initButtons(handleAction) {
   let highlightedIconIndex = 0;
 
   function handleClickButton({ target }) {

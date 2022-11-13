@@ -1,0 +1,29 @@
+@keyframes hatching {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: -1225px;
+  }
+}
+
+.c-fox-sprite {
+  position: relative;
+  top: 300px;
+  left: 240px;
+
+  &.fox-init {
+    display: none;
+  }
+
+  &.c-fox-hatching {
+    width: 175px;
+    height: 217px;
+
+    background: no-repeat url("../../assets/sprites/fox-hatching.png")
+      transparent;
+    background-position: -1050px;
+
+    animation: hatching 3s steps(7);
+  }
+}

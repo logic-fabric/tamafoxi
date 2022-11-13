@@ -1,14 +1,14 @@
-import { inititButtons } from "./components/buttons";
+import { initButtons } from "./components/buttons";
 import { displayMessageInDialog } from "./components/dialogs";
 
-import { gameState } from "./gameState";
+import { game, handleAction } from "./gameState";
 
 import { TICK_RATE } from "./gameConstants";
 
 export async function init() {
   console.log("Initializing game");
 
-  inititButtons(gameState.handleAction);
+  initButtons(handleAction);
   displayMessageInDialog("Press the middle button to start the game");
 
   let nextTimeToTick = Date.now();
@@ -17,7 +17,8 @@ export async function init() {
     const now = Date.now();
 
     if (nextTimeToTick <= now) {
-      gameState.tick();
+      game.tick();
+
       nextTimeToTick = now + TICK_RATE;
     }
 
